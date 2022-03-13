@@ -1,0 +1,10 @@
+.btn {
+	border: none;
+	padding: 5px 15px;
+	text-decoration: none;
+
+	&_primary {
+		background: $red;
+		color: $white;
+	}
+}
