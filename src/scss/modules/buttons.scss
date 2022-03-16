@@ -2,6 +2,10 @@
 	border: none;
 	padding: 5px 15px;
 	text-decoration: none;
+	min-width: 125px;
+	min-height: 30px;
+	font-size: 16px;
+	cursor: pointer;
 
 	&_primary {
 		background: $red;
