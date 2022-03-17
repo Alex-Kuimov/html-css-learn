@@ -7,14 +7,40 @@
 	font-size: 16px;
 	cursor: pointer;
 
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	box-shadow: 0 0 0 0 $white;
+
 	&_primary {
 		background: $red;
 		color: $white;
 	}
 
-	//&:hover {
-	//	animation: changeColor 0.3s forwards;
-	//}
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+			    transform: translateX(-50%);
+		width: 0;
+		height: 100%;
+		background: $white;
+		z-index: -1;
+		-webkit-transition: width 350ms ease-in-out;
+		transition: width 350ms ease-in-out;
+	}
+	&:hover {
+		color: $red;
+		box-shadow: 0 0 3px 1px $red;
+	}
+	&:hover:after {
+		width: 110%;
+	}
 }
 
 
