@@ -10,7 +10,12 @@
 	}
 
 	&__title {
-		font-size: 36px;
+		font-size: calc(2vw * 1.5);
+
+		@media screen and (max-width: $notebook) {
+			font-size: calc(3vw * 1.5);
+		}
+
 		padding: 10px;
 		font-weight: 400;
 	}
