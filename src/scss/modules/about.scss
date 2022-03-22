@@ -10,7 +10,7 @@
 	}
 
 	&__title {
-		font-size: calc(2vw * 1.5);
+		font-size: calc(2vw * 1.2);
 
 		@media screen and (max-width: $notebook) {
 			font-size: calc(3vw * 1.5);
