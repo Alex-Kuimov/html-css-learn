@@ -24,6 +24,15 @@
 				transform: scale(1.2);
 			}
 		}
+
+		@media screen and (max-width: $small_screen) {
+			height: calc((100vw / 2) - 50px);
+		}
+
+		@media screen and (max-width: $laptop_large) {
+			height: calc((100vw / 1) - 50px);
+		}
+
 	}
 
     &__info {
