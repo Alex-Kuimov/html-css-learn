@@ -3,7 +3,18 @@
 	padding: 30px 0;
 
 	@media screen and (max-width: $small_screen) {
-		display: none;
+		width: calc(50% - 20px);
+
+		&:nth-child(1n){
+			margin-left: 0;
+		}
+
+		&:nth-child(2n){
+			margin-right: 0;
+		}
+	}
+	@media screen and (max-width: $laptop_large) {
+		width: 100%;
 	}
 
 	&__wrapper {
